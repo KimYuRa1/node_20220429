@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/notice_write.css">
+    <title>공지사항 작성 페이지</title>
+</head>
+<body>
+    <header>
+        <article class="t_nav">
+            <ul>
+                <li class="t_nav_event"><a href="">도전! 투어미션</a></li>
+                <li class="t_nav_event"><a href="">스마트비대면주문</a></li>
+                <li><a href="">먹고보고즐길거리</a></li>
+                <li><a href="">입점신청</a></li>
+                <li><a href="">참여마당</a></li>
+                <li><a href="">야시장소개</a></li>
+            </ul>
+            <h1><a href="">
+                <img src="../img/logo.jpg">
+            </a></h1>
+            <div class="h_seach_btn">
+                <img src="../img/search.png">
+            </div>
+            <div class="h_menu_btn">
+                <img src="../img/menu.png">
+            </div>
+        </article>
+    </header>
+
+    <main>
+        <section>
+            <h2>공지사항 작성 페이지</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label>제목 </label></td>
+                        <td><input type="text" id="N_REGI_TITLE"  required
+                             maxlength="100" size="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label>날짜 </label></td>
+                        <td>
+                            <input type="text" id="N_REGI_DATE"> (YY-MM-DD)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>분류</td>
+                        <td>
+                            <select id="N_REGI_BOARD">
+                                <option>공지</option>
+                                <option>모집 공고</option>
+                                <option>행사</option>
+                                <option>임시 휴장</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용 </td>
+                        <td><textarea id="N_REGI_CONTENT" rows="30" cols="100"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>첨부 </td>
+                        <td><input type="button" value="파일 첨부"></td>
+                    </tr>
+                    <tr>
+                        <td>중요 공지사항으로 게시 </td>
+                        <td><input type="checkbox" id="N_REGI_MAIN"></td>
+                    </tr>
+                    <tr>
+                        <td><label>관리자ID 확인 </label></td>
+                        <td><input type="text" id="AD_NAME"></td>
+                    </tr>
+                    <tr>
+                        <td><label>관리자PW 확인</label></td>
+                        <td><input type="password" id="AD_PW"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="저장">
+                        </td>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <article class="b_footer">
+            <div class="footer_1">
+                <h2>서문시장야시장</h2>
+            </div>
+            <div class="footer_2">
+                <address>
+                    <ul>
+                        <li>
+                            <span>대구 서문시장 야시장</span>
+                        </li>
+                        <li>대구 중구 달성로 50 서문시장</li>
+                        <li>문의 053-256-6341</li>
+                    </ul>
+                </address>
+
+                <!--<div class="footer_img">
+                    <div><img src="./img/footer1.png"></div>
+                    <div><img src="./img/footer2.png"></div>
+                    <div><img src="./img/footer3.png"></div>
+                    <div><img src="./img/footer4.png"></div>
+                </div>-->
+            </div>
+
+            <div class="footer_3">
+                <img src="../img/facebook-page-logo.png">
+                <img src="../img/naver-blog_1.png">
+            </div>
+        </article>
+    </footer>
+</body>
+</html>
